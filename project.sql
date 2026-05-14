@@ -1,15 +1,8 @@
 
-CREATE TABLE farmers (
-    farmer_id NUMBER PRIMARY KEY,
-    farmer_name VARCHAR2(100),
-    phone_number VARCHAR2(20),
-    address VARCHAR2(200)
-);
+INSERT INTO farmers VALUES (1, 'Ali Khan', '03001234567', 'Hyderabad');
 
-CREATE TABLE lands (
-    land_id NUMBER PRIMARY KEY,
-    farmer_id NUMBER,
-    land_area NUMBER,
-    location VARCHAR2(100),
-    FOREIGN KEY (farmer_id) REFERENCES farmers(farmer_id)
-);
+INSERT INTO farmers VALUES (2, 'Ahmed Ali', '03111234567', 'Karachi');
+
+INSERT INTO lands VALUES (101, 1, 25, 'Hyderabad');
+
+INSERT INTO lands VALUES (102, 2, 40, 'Karachi');
